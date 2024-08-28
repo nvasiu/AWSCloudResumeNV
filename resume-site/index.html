@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NAME - Resume</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Matemasie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Geologica:wght@100..900&family=Matemasie&display=swap" rel="stylesheet">
+        <script>
+          fetch('https://3jvz75tlhj.execute-api.us-east-1.amazonaws.com/Prod/putcount')
+            .then(() => fetch('https://3jvz75tlhj.execute-api.us-east-1.amazonaws.com/Prod/getcount'))
+            .then(response => response.json())
+            .then((data) => {
+              document.getElementById('count').innerText = data.count
+            })
+        </script>
+        <style>
+            html
+            {
+                font-size:100%;
+            }
+
+            body
+            {
+                -webkit-font-smoothing:antialiased;
+                color:#333332;
+                font-family:"Crete Round", serif;
+                font-size:18px;
+                font-weight:400;
+                line-height:1.4;
+                text-rendering:optimizeLegibility;
+            }
+
+            .skill-set li:hover
+            {
+                background:#3498db;
+            }
+
+            h1
+            {
+                color:rgba(0,0,0,.75);
+            }
+
+            hr
+            {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                border-style:inset;
+            }
+
+            .wrapper
+            {
+                height:100%;
+            }
+
+            .left
+            {
+                background:rgb(209, 187, 158);
+                border-right:1px solid rgba(0,0,0,.05);
+                float:right;
+                height:100%;
+                margin-left:-1px;
+                min-width:256px;
+                position:fixed;
+                width:33.33%;
+            
+            }
+
+            .right
+            {
+                float:right;
+                height:100%;
+                position:relative;
+                width:66.66%;
+            }
+
+
+            .name-hero
+            {
+                background:rgba(204, 230, 216,.001);
+                bottom:0;
+                height:290px;
+                left:0;
+                margin:auto;
+                position:absolute;
+                right:0;
+                top:0;
+                width:85%;
+            }
+
+            .name-hero h1
+            {
+                font-family: "Geologica", sans-serif;
+                font-size:2.5em;
+                text-align:center;
+            }
+
+            .name-hero h1 em
+            {
+                color:rgba(0,0,0,.3);
+                font-style:normal;
+                font-weight:700;
+            }
+
+            .name-hero p
+            {
+                color:rgba(0,0,0,.75);
+                font-size:1em;
+                line-height:1.5;
+                margin:0 8px 0 0;
+                text-align:center;
+            }
+
+            .name-hero .name-text
+            {
+                margin:0 auto;
+                width:85%;
+            }
+
+            .inner
+            {
+                margin:0 auto;
+                max-width:975px;
+                padding:3em;
+            }
+
+            .inner h1
+            {
+                font-size:1.75em;
+            }
+
+            .inner p
+            {
+                color:rgba(0,0,0,.5);
+            }
+
+            .inner p em
+            {
+                color:rgba(0,0,0,1);
+                font-style:normal;
+            }
+
+            .inner section
+            {
+                margin:100px auto;
+            }
+
+            .skill-set
+            {
+                list-style-type:none;
+                margin-top:-10px;
+                max-width:570px;
+                padding:0;
+            }
+
+            .skill-set li
+            {
+                background:rgb(114, 100, 81);
+                border-radius:5px;
+                color:#FFF;
+                display:inline-block;
+                list-style:none;
+                margin:15px 15px 0 0;
+                padding:10px;
+                text-align:justify;
+            }
+
+            .splitdiv
+            {
+              display: flex;
+              justify-content: space-between;
+            }
+
+            .splitdiv a
+            {
+              color: inherit;
+              text-decoration: none;
+            }
+
+            @media screen and (max-width: 48em) {
+                .right,.left
+                {
+                    float:none;
+                position:relative !important;
+                    width:100%;
+                min-height:500px;
+                }
+
+            @media screen and (max-width: 75em) {
+                body
+            { font-size:16px;}
+            }
+
+            @media screen and (max-width: 60em) {
+                body
+            { font-size:14px;}
+            }
+
+            }
+        </style>
+    <body>
+        <div class="wrapper clearfix">
+            <div class="left">
+          
+              <div class="name-hero">
+          
+                <div class="me-img"></div>
+          
+                <div class="name-text">
+          
+                  <h1>Nicholas <em>Vasiu</em></h1>
+                  <p>This site was visited <a id="count">...</a> times.</p>
+                  <hr/>
+                  <div class="splitdiv">
+                    <p>Email</p>
+                    <a href="mailto: nicvdev@yahoo.com"><em>nicvdev@yahoo.com</em></a>
+                  </div>
+                  <div class="splitdiv">
+                    <p>LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/nicvasiu/"><em>linkedin.com/in/nicvasiu</em></a>
+                  </div>
+                  <div class="splitdiv">
+                    <p>Github</p>
+                    <a href="https://github.com/nvasiu"><em>github.com/nvasiu</em></a>
+                  </div>
+          
+                </div>
+          
+              </div>
+          
+            </div>
+            <div class="right">
+          
+              <div class="inner">
+                <section>
+                  <h1>Education</h1>
+
+                  <p>Vancouver, BC <em>Simon Fraser University | Bachelor of Science in Computing Science</em></p>
+                </section>
+                
+                <section>
+                  <h1>Employment</h1>
+
+                  <p>Jan 2022 - Aug 2022 <em>BC Renal Agency | Software Developer (Co-op)</em></p>
+                  <ul>
+                    <li><p>Developed a patient records application for BC Renal doctors</p></li>
+                    <li><p>Full stack agile developement</p></li>
+                    <li><p>Java and Oracle ADF back-end</p></li>
+                    <li><p>JavaScript and HTML front-end</p></li>
+                    <li><p>SQL and Oracle RDBMS databases</p></li>
+                  </ul>
+
+                  <hr />
+
+                  <p>Jan 2021 - Aug 2021 <em>Gravit-e Technologies | QA Tester (Co-op)</em></p>
+                  <ul>
+                    <li><p>Tested developer updates on 40+ websites</p></li>
+                    <li><p>Created Katalon / Selenium automated regression tests</p></li>
+                    <li><p>Wrote PHP unit tests</p></li>
+                  </ul>
+
+                </section>
+
+                <section>
+                  <h1>Technical Skills</h1>
+                  <ul class="skill-set">
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Restful API</li>
+                    <li>SQL</li>
+                    <li>Git / Github</li>
+                    <li>Agile</li>
+                    <li>AWS</li>
+                  </ul>
+                </section>
+
+                <h1>Projects</h1>
+
+                <p><em>Ray Tracer</em></p>
+                  <p>This program generates images of objects with realistic lighting by simulating how light behaves in a virtual environment. Users can use the menu UI to modify environment properties, and the image will update in real time.</p>
+                  <a href="https://github.com/nvasiu/RayTracer"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>C++</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>Email Reminder</em></p>
+                  <p>A serverless web application that allows users to schedule a reminder message to be sent to their Email. Created using Amazon Web Services such as Amazon SES, Lambda, IAM, Step Functions, API Gateway and S3.</p>
+                  <a href="https://github.com/nvasiu/ReminderApp"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>AWS</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>Chat App</em></p>
+                  <p>An online chat room application that supports user created accounts. The chat room is secured with React protected routes, and Firebase is used to create and authenticate user accounts and save chat messages.</p>
+                  <a href="https://github.com/nvasiu/ChatApp"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>HTML & CSS</li>
+                    <li>Firebase</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>Store Product Manager & API</em></p>
+                  <p>This application helps store owners to manage products, customers and orders. Supported features include application user accounts for security, creating product orders and printing order receipts. This project also includes an API that allows users to manage application accounts through API calls.</p>
+                  <a href="https://github.com/nvasiu/ProductManagerProject"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>API</li>
+                    <li>ASP.NET</li>
+                    <li>C#</li>
+                    <li>SQL</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>Travel Map</em></p>
+                  <p>This application allows users to navigate a map which highlights nearby restaurants, hotels and attractions. Users can explore their current city or search for any location around the world. View details such as pictures, Trip Advisor rating, price range, contact information and more. Built using APIs from Google Maps and Trip Advisor.</p>
+                  <a href="https://github.com/nvasiu/TravelMapProject"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>API</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>3D Tetris</em></p>
+                  <p>A game based on Tetris created in 3D. Players control a crane arm that places Tetris pieces on the game board, and have to avoid placing pieces on top of each other. The crane, board and pieces are rendered in real time and the camera can be rotated to view the game from different angles.</p>
+                  <a href="https://github.com/nvasiu/3D-Tetris"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>C++</li>
+                    <li>OpenGL</li>
+                  </ul>
+
+                </section>
+              </div>
+          
+            </div>
+          
+          </div>
+    </body>
+</html>
