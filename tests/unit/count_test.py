@@ -2,8 +2,8 @@ import json
 
 import pytest
 
-from hello_world import app
-
+from getcount import app as getapp
+from putcount import app as putapp
 
 @pytest.fixture()
 def apigw_event():
@@ -64,9 +64,11 @@ def apigw_event():
 
 def test_lambda_handler(apigw_event):
 
-    ret = app.lambda_handler(apigw_event, "")
-    data = json.loads(ret["body"])
+    getret = getapp.lambda_handler(apigw_event, "")
 
-    assert ret["statusCode"] == 200
-    assert "message" in ret["body"]
-    assert data["message"] == "hello world"
+    assert getret["statusCode"] == 200
+    assert "count" in getret["body"]
+
+    putret = putapp.lambda_handler(apigw_event, "")
+
+    assert putret["statusCode"] == 200
