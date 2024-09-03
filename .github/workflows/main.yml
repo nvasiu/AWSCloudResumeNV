@@ -32,6 +32,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
     - uses: aws-actions/setup-sam@v1
     - uses: aws-actions/configure-aws-credentials@v1
       with:
