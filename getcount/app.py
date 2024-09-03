@@ -1,11 +1,12 @@
 import json
 import boto3
 
-def lambda_handler(event, context):
-    dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb')
 
-    table_name = "cloud-resume-nv"
-    table = dynamodb.Table(table_name)
+table_name = "cloud-resume-nv"
+table = dynamodb.Table(table_name)
+
+def lambda_handler(event, context):
 
     try:
         response = table.get_item(Key={ 'ID': '1' })
