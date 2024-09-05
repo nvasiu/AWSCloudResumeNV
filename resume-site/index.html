@@ -5,8 +5,7 @@
         <title>NAME - Resume</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Matemasie&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Geologica:wght@100..900&family=Matemasie&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <script>
           fetch('https://3jvz75tlhj.execute-api.us-east-1.amazonaws.com/Prod/putcount')
             .then(() => fetch('https://3jvz75tlhj.execute-api.us-east-1.amazonaws.com/Prod/getcount'))
@@ -25,7 +24,7 @@
             {
                 -webkit-font-smoothing:antialiased;
                 color:#333332;
-                font-family:"Crete Round", serif;
+                font-family:"Merriweather", serif;
                 font-size:18px;
                 font-weight:400;
                 line-height:1.4;
@@ -39,7 +38,7 @@
 
             h1
             {
-                color:rgba(0,0,0,.75);
+                color:rgba(30, 7, 85, 0.75);
             }
 
             hr
@@ -56,7 +55,7 @@
 
             .left
             {
-                background:rgb(209, 187, 158);
+                background:rgb(236, 236, 236);
                 border-right:1px solid rgba(0,0,0,.05);
                 float:right;
                 height:100%;
@@ -127,12 +126,17 @@
 
             .inner h1
             {
-                font-size:1.75em;
+                font-size:2.0em;
+            }
+
+            .inner h3
+            {
+                font-size:1.3em;
             }
 
             .inner p
             {
-                color:rgba(0,0,0,.5);
+                color:rgba(0,0,0,.7);
             }
 
             .inner p em
@@ -150,13 +154,13 @@
             {
                 list-style-type:none;
                 margin-top:-10px;
-                max-width:570px;
+                max-width:700px;
                 padding:0;
             }
 
             .skill-set li
             {
-                background:rgb(114, 100, 81);
+                background:rgb(41, 41, 41);
                 border-radius:5px;
                 color:#FFF;
                 display:inline-block;
@@ -236,28 +240,41 @@
                 <section>
                   <h1>Education</h1>
 
-                  <p>Vancouver, BC <em>Simon Fraser University | Bachelor of Science in Computing Science</em></p>
+                  <h3>Bachelor of Science in Computing Science</h3>
+                  <p><em>Simon Fraser University | </em>Vancouver, BC</p>
                 </section>
                 
                 <section>
                   <h1>Employment</h1>
 
-                  <p>Jan 2022 - Aug 2022 <em>BC Renal Agency | Software Developer (Co-op)</em></p>
+                  <h3>Software Developer (Co-op)</h3>
+                  <p><em>BC Renal Agency | </em>Jan 2022 - Aug 2022</p>
                   <ul>
-                    <li><p>Developed a patient records application for BC Renal doctors</p></li>
-                    <li><p>Full stack agile developement</p></li>
-                    <li><p>Java and Oracle ADF back-end</p></li>
-                    <li><p>JavaScript and HTML front-end</p></li>
-                    <li><p>SQL and Oracle RDBMS databases</p></li>
+                    <li><p>Collaborated with a team of 10+ developers and testers to develop, and maintain a patient records application.</p></li>
+                    <li><p>Implemented Agile methodologies, participating in 250+ meetings and around 20 two-week sprints, occasionally
+                      serving as Scrum Master to facilitate team coordination and progress.
+                      </p></li>
+                    <li><p>Handled full stack development tasks, utilizing Oracle ADF and Java for back-end, JavaScript/HTML for front-end,
+                      and Oracle RDBMS and SQL scripting for database fixes and modifications.</p></li>
+                    <li><p>Managed concurrent bug fixing and development tasks, troubleshooting 100+ issues, and generating comprehensive
+                      reports for quality assurance testers to expedite resolution.</p></li>
+                    <li><p>Headed the development of a new page to record patient COVID vaccination data, facilitating streamlined data
+                      collection and reporting processes for dozens of patients affected by the pandemic.</p></li>
                   </ul>
 
                   <hr />
 
-                  <p>Jan 2021 - Aug 2021 <em>Gravit-e Technologies | QA Tester (Co-op)</em></p>
+                  <h3>QA Tester (Co-op)</h3>
+                  <p><em>Gravit-e Technologies | </em>Jan 2021 - Aug 2021</p>
                   <ul>
-                    <li><p>Tested developer updates on 40+ websites</p></li>
-                    <li><p>Created Katalon / Selenium automated regression tests</p></li>
-                    <li><p>Wrote PHP unit tests</p></li>
+                    <li><p>Collaborated with development team to conduct manual and automated testing on 40+ websites.</p></li>
+                    <li><p>Utilized Katalon/Selenium to automate regression tests and developed unit tests for website back-ends using PHP,
+                      identifying and resolving 90% of back-end issues before deployment.</p></li>
+                    <li><p>Independently formulated comprehensive test plans and consistently completed testing tasks ahead of schedule,
+                      ensuring timely delivery of high-quality software.</p></li>
+                    <li><p>Efficiently managed several testing tasks at a time using Basecamp and Jira, often resolving 10-20 issues per week.</p></li>
+                    <li><p>Authored testing tutorials and project documentation to onboard and train new employees, contributing to a 30%
+                      reduction in onboarding time for new team members.</p></li>
                   </ul>
 
                 </section>
@@ -282,7 +299,28 @@
 
                 <h1>Projects</h1>
 
-                <p><em>Ray Tracer</em></p>
+                <p><em>Cloud Resume Challenge | </em>Sep 2024</p>
+                  <p>This website was created as part of the AWS Cloud Resume Challenge.</p>
+                  <ul>
+                    <li><p>API is used to update a DynamoDB database.</p></li>
+                    <li><p>HTTPS and SSL certificates setup using CloudFront.</p></li>
+                    <li><p>AWS infrastructure is written as code and deployed using AWS SAM CLI.</p></li>
+                    <li><p>CI/CD with GitHub Actions, updates are automatically deployed to AWS and the front-end.</p></li>
+                    <li><p>Automated unit tests run on every pushed commit before deployment.</p></li>
+                  </ul>
+                  <a href="https://github.com/nvasiu/AWSCloudResumeNV"><p>Source / More Info</p></a>
+                  <ul class="skill-set">
+                    <li>AWS</li>
+                    <li>CI/CD</li>
+                    <li>HTML & CSS</li>
+                    <li>IaC</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                  </ul>
+
+                <hr />
+
+                <p><em>Ray Tracer | </em>Mar 2024</p>
                   <p>This program generates images of objects with realistic lighting by simulating how light behaves in a virtual environment. Users can use the menu UI to modify environment properties, and the image will update in real time.</p>
                   <a href="https://github.com/nvasiu/RayTracer"><p>Source / More Info</p></a>
                   <ul class="skill-set">
@@ -291,7 +329,7 @@
 
                 <hr />
 
-                <p><em>Email Reminder</em></p>
+                <p><em>Email Reminder | </em>Jan 2024</p>
                   <p>A serverless web application that allows users to schedule a reminder message to be sent to their Email. Created using Amazon Web Services such as Amazon SES, Lambda, IAM, Step Functions, API Gateway and S3.</p>
                   <a href="https://github.com/nvasiu/ReminderApp"><p>Source / More Info</p></a>
                   <ul class="skill-set">
@@ -303,7 +341,7 @@
 
                 <hr />
 
-                <p><em>Chat App</em></p>
+                <p><em>Chat App | </em>Oct 2023</p>
                   <p>An online chat room application that supports user created accounts. The chat room is secured with React protected routes, and Firebase is used to create and authenticate user accounts and save chat messages.</p>
                   <a href="https://github.com/nvasiu/ChatApp"><p>Source / More Info</p></a>
                   <ul class="skill-set">
@@ -315,7 +353,7 @@
 
                 <hr />
 
-                <p><em>Store Product Manager & API</em></p>
+                <p><em>Store Product Manager & API | </em>Aug 2023</p>
                   <p>This application helps store owners to manage products, customers and orders. Supported features include application user accounts for security, creating product orders and printing order receipts. This project also includes an API that allows users to manage application accounts through API calls.</p>
                   <a href="https://github.com/nvasiu/ProductManagerProject"><p>Source / More Info</p></a>
                   <ul class="skill-set">
@@ -327,7 +365,7 @@
 
                 <hr />
 
-                <p><em>Travel Map</em></p>
+                <p><em>Travel Map | </em>Jul 2023</p>
                   <p>This application allows users to navigate a map which highlights nearby restaurants, hotels and attractions. Users can explore their current city or search for any location around the world. View details such as pictures, Trip Advisor rating, price range, contact information and more. Built using APIs from Google Maps and Trip Advisor.</p>
                   <a href="https://github.com/nvasiu/TravelMapProject"><p>Source / More Info</p></a>
                   <ul class="skill-set">
